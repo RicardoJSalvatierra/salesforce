@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_New_Opportunity</fullName>
+    <availability>online</availability>
+    <description>Este botón creara una Oportunidad a partir de un Caso</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Create New Opportunity</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/006/e?accid={!Account.Id}&amp;
+conid={!Contact.Id}&amp;
+opp6=External+Referral&amp;opp11=Prospecting&amp;opp9={!TODAY()}&amp;
+opp14=This+was+created+by+from+a+custom+button+click&amp;opp3={!Account.Name}</url>
+</WebLink>
